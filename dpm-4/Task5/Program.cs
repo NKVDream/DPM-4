@@ -7,7 +7,7 @@ class Task5
         Random random = new Random();
         for (int i = 0; i < RanNums.Length; i++)
         {
-            RanNums[i] = random.Next();
+            RanNums[i] = random.Next(-10, 10);
         }
         Task5.NC(RanNums);
     }
@@ -17,9 +17,10 @@ class Task5
         {
             if (i < 0)
             {
-                array[i] = 0;
+                Console.WriteLine(0);
                 continue;
             }
+            Console.WriteLine(i);
         }
     }
 }
